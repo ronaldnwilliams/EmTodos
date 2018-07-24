@@ -1,0 +1,14 @@
+<li class="list-group-item todo" >
+  <div class="row">
+    <button class="btn btn-link border-0">
+      {{input class="" type="checkbox" checked=todo.complete }}
+    </button>
+    <h3>
+      {{#if todo.complete}}
+        <s>{{todo.name}}</s>
+      {{else}}
+        {{input class="btn-link border-0 w-100" value=todo.name focus-out="updateTodo"}}
+      {{/if}}
+    </h3>
+  </div>
+</li>
